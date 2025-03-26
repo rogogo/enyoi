@@ -3,47 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda Clase Enyoi</title>
+    <title>Portafolio | Desarrollador Full Stack</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body id="Azul">
-    <ul>
-        <li>
-            <a href="index.html">INICIO</a>
-        </li>
-        <li>
-            <a href="nosotros.html">NOSOTROS</a>
-        </li>
-        <li>
-            <a href="contacto.html">CONTACTO</a>
-        </li>
-    </ul>
-   
-    <hr>
-    <h1>INICIO</h1>
-    <img src="Img/enyoi.png" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime illo voluptatum dolor quod a debitis hic, deserunt praesentium sint ex voluptatibus suscipit reiciendis enim quos fuga accusamus perferendis? Quos!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime illo voluptatum dolor quod a debitis hic, deserunt praesentium sint ex voluptatibus suscipit reiciendis enim quos fuga accusamus perferendis? Quos!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime illo voluptatum dolor quod a debitis hic, deserunt praesentium sint ex voluptatibus suscipit reiciendis enim quos fuga accusamus perferendis? Quos!</p>
-    <button onclick="cambiarColor('blanco')">Blanco</button>
-    <button onclick="cambiarColor('Azul')">Azul</button>
-    <script>
-        function cambiarColor(color){
-            document.querySelector('body').setAttribute('id',color)
-        }
-    </script>
-    <hr>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, quaerat? Quis id architecto dolor officia quo, sequi reiciendis expedita vero rem eveniet ea ratione, corporis a quam laborum molestiae odit?</p>
-    <ul>
-        <li>
-            <a href="https://web.facebook.com/" target="_blank">Facebook</a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-        </li>
-        <li>
-            <a href="https://x.com/" target="_blank">Twiter</a>
-        </li>
-    </ul>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy <span>Ronald Gomez</span></h1>
+            <h2>Desarrollador Full Stack</h2>
+            <p>Diseño, desarrollo y puesta en funcionamiento de tus ideas!</p>
+            <a href="#proyectos" class="btn">Ver mis proyectos</a>
+        </div>
+        <div class="hero-image">
+            <img src="img/profile.jpg" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Soy un apasionado desarrollador Full Stack que trabaja en la creacion de sitios web responsivos y accesibles. Me especializo en convertir tus ideas en diseños creativos, experiencias digitales funcionales.</p>
+                <p>Estudié Desarrollo Front end en Enjoy y actualmente estoy ampliando mis conocimientos en Full Stack</p>
+                <p>Cuando no estoy programando, me gusta aprender nuevas tecnologías y desarrollar proyectos retadores.</p>
+            </div>
+            <div class="about-details">
+                <div class="detail-item">
+                    <h3>Nombre:</h3>
+                    <p>Ronald Gomez</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Email:</h3>
+                    <p>ronald.gomez@gmail.com</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Ubicación:</h3>
+                    <p>Risaralda, Colombia</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Experiencia:</h3>
+                    <p>1 año</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section">
+        <h2 class="section-title">Mis habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Tecnologías principales</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks y librerías</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 5%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fa-brands fa-sass"></i>
+                        <span>Sass</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 5%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-bootstrap"></i>
+                        <span>Bootstrap</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Herramientas</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 62%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-terminal"></i>
+                        <span>Terminal</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <h2 class="section-title">Mis proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="img/proyecto1.svg" alt="Proyecto 1">
+                <div class="project-info">
+                    <h3>Web Site Integral</h3>
+                    <p>Sitio web diseñado a la medida para una empresa de tecnologia, cuenta con accesos a sitios externos y varios desarrollos de graficos personalizados</p>
+                    <div class="project-tech">
+                        <span>WordPress</span>
+                        <span>Hosting Rocket.net</span>
+                        <span>WPForm</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://allianceenterprise.com/" class="btn-small btn-outline">Ver demo</a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/proyecto2.png" alt="Proyecto 2">
+                <div class="project-info">
+                    <h3>PROYECTO 2</h3>
+                    <p>Sitio web para una tienda de ventas OnLine, se encuentra en diseño, pronto la conoceras.</p>
+                    <div class="project-tech">
+                        <span>Html</span>
+                        <span>API Rest</span>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-small btn-outline">Ver demo</a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="img/proyecto3.png" alt="Proyecto 3">
+                <div class="project-info">
+                    <h3>PROYECTO 3</h3>
+                    <p>Proyecto en etapa de Analisis, pronto estaré subiendo contenido sonbre el, seguro te encantará</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-small btn-outline">Ver demo</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>¡Cuentame tu Proyecto!</h3>
+                <p>Si deseas más información sobre mis servicios, no dudes en contactarme.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ronald.gomez@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+57 319 650 5707</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Risaralda, Colombia</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/rogogo/enyoi/blob/2e936731ace6418b7dae54346a19f325166b87f2/mipagina.com/index.html"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ronaldgg"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/RonaldGomezG1"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ronald_g_g/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <form class="contact-form" action="https://formsubmit.co/ronald.gomez@gmail.com" method="POST">
+                <!-- Campos del formulario (deben tener 'name') -->
+                <div class="form-group">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Asunto" required>
+                    <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                </div>
+                <!-- Input oculto para redirección después del envío (opcional) -->
+                <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+                
+                <!-- Botón de enviar -->
+                <button type="submit" class="btn">Enviar mensaje</button>
+              </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ronald Gomez.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
